@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   return (
     <div className="col-span-1 lg:col-span-2">
@@ -13,13 +13,17 @@ const ContactForm = () => {
             <div className="card-body">
               <span className="text-base-content opacity-70">
                 <h2 className="text-2xl font-bold">Contact me</h2>
-                        </span>
-              <form 
-                className="contact-form" 
-                action="https://formspree.io/f/xknyorrb" 
-                method="post">
+              </span>
+              <form
+                className="contact-form"
+                action="https://formspree.io/f/xknyorrb"
+                method="post"
+              >
                 <div className="mb-4">
-                  <label htmlFor="name" className="block text-sm leading-5 text-opacity-60">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm leading-5 text-opacity-60"
+                  >
                     Your name
                   </label>
                   <input
@@ -32,7 +36,10 @@ const ContactForm = () => {
                   />
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="email" className="block text-sm leading-5 text-opacity-60">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm leading-5 text-opacity-60"
+                  >
                     Your email
                   </label>
                   <input
@@ -45,7 +52,10 @@ const ContactForm = () => {
                   />
                 </div>
                 <div className="mb-4">
-                  <label htmlFor="message" className="block text-sm leading-5 text-opacity-60">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm leading-5 text-opacity-60"
+                  >
                     Your message
                   </label>
                   <textarea
