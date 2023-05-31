@@ -194,7 +194,6 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         certifications={sanitizedConfig.certifications}
                       />
-                      
                     </div>
                   </div>
                   <div className="lg:col-span-2 col-span-1">
