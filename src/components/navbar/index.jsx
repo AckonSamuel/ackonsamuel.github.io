@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const MenuBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -11,19 +10,6 @@ const MenuBar = () => {
   const handleMenuItemClick = () => {
     setIsOpen(false);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sticky = window.scrollY > 0;
-      setIsSticky(sticky);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <nav className="bg-gray-800 fixed z-50 top-0 left-0 w-full">
