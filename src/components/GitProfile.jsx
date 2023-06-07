@@ -156,7 +156,7 @@ const GitProfile = ({ config }) => {
           sanitizedConfig && (
             <Fragment>
               <Menubar />
-              <div className={`p-4 lg:p-10 min-h-full ${bgColor}`}>
+              <div className={`mt-20 p-4 lg:p-10 min-h-full ${bgColor}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
                   <div className="col-span-1">
                     <div className="grid grid-cols-1 gap-6">
