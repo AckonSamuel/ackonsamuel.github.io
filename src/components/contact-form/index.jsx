@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
 
   return (
-    <div className="col-span-1 lg:col-span-2">
+    <div id="contact" className="col-span-1 lg:col-span-2">
       <div className="grid grid-cols-2 gap-6">
         <div className="col-span-2">
           <div className="card compact bg-base-100 shadow bg-opacity-40">

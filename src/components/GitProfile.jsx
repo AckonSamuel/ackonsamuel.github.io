@@ -27,6 +27,7 @@ import '../assets/index.css';
 import { formatDistance } from 'date-fns';
 import ExternalProject from './external-project';
 import ContactForm from './contact-form';
+import Menubar from './navbar';
 
 const bgColor = 'bg-base-300';
 
@@ -154,6 +155,7 @@ const GitProfile = ({ config }) => {
         ) : (
           sanitizedConfig && (
             <Fragment>
+              <Menubar />
               <div className={`p-4 lg:p-10 min-h-full ${bgColor}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
                   <div className="col-span-1">
@@ -167,6 +169,7 @@ const GitProfile = ({ config }) => {
                         />
                       )}
                       <AvatarCard
+                      id="home"
                         profile={profile}
                         loading={loading}
                         avatarRing={!sanitizedConfig.themeConfig.hideAvatarRing}
@@ -205,16 +208,19 @@ const GitProfile = ({ config }) => {
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                       />
                       <ExternalProject
+                      id="projects"
                         loading={loading}
                         externalProjects={sanitizedConfig.externalProjects}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                       />
                       <Blog
+                      id="blog"
                         loading={loading}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                         blog={sanitizedConfig.blog}
                       />
-                      <ContactForm />
+                      <ContactForm 
+                       />
                     </div>
                   </div>
                 </div>

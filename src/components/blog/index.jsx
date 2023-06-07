@@ -177,7 +177,7 @@ const Blog = ({ loading, blog, googleAnalytics }) => {
   return (
     <Fragment>
       {displaySection(blog) && (
-        <div className="col-span-1 lg:col-span-2">
+        <div id="blogs" className="col-span-1 lg:col-span-2">
           <div className="grid grid-cols-2 gap-6">
             <div className="col-span-2">
               <div
