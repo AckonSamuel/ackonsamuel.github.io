@@ -7,7 +7,7 @@ const config = {
     limit: 2, // How many projects to display.
     exclude: {
       forks: true, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      projects: ['labsdb', 'tryagain'], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
@@ -83,6 +83,14 @@ const config = {
         'https://user-images.githubusercontent.com/92922987/236263407-5214f883-ca68-47af-9425-ee8daa50dcb4.jpg',
       link: 'https://famous-klepon-e50d82.netlify.app/',
       source: 'https://www.github.com/AckonSamuel/space-travellers-hub',
+    },
+    {
+      title: 'Math Magicians',
+      description:
+        'A react web app that gives a history about Mathematics, a page with a calculator and a page that gives you a fact about any number upon request',
+      imageUrl: 'https://www.linkpicture.com/q/holloa.png',
+      link: 'https://math-magician-beta.vercel.app/',
+      source: 'https://github.com/AckonSamuel/math-magician',
     },
     {
       title: 'Space flight news',
