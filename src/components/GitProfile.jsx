@@ -169,7 +169,7 @@ const GitProfile = ({ config }) => {
                         />
                       )}
                       <AvatarCard
-                      id="home"
+                        id="home"
                         profile={profile}
                         loading={loading}
                         avatarRing={!sanitizedConfig.themeConfig.hideAvatarRing}
@@ -208,19 +208,18 @@ const GitProfile = ({ config }) => {
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                       />
                       <ExternalProject
-                      id="projects"
+                        id="projects"
                         loading={loading}
                         externalProjects={sanitizedConfig.externalProjects}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                       />
                       <Blog
-                      id="blog"
+                        id="blog"
                         loading={loading}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                         blog={sanitizedConfig.blog}
                       />
-                      <ContactForm 
-                       />
+                      <ContactForm />
                     </div>
                   </div>
                 </div>
